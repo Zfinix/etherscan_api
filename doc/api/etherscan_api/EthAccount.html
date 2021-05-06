@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the EthAccount extension from the etherscan_api library, for the Dart programming language.">
+  <title>EthAccount extension - etherscan_api library - Dart API</title>
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../static-assets/github.css">
+  <link rel="stylesheet" href="../static-assets/styles.css">
+  <link rel="icon" href="../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">etherscan_api</a></li>
+    <li><a href="../etherscan_api/etherscan_api-library.html">etherscan_api</a></li>
+    <li class="self-crumb">EthAccount extension</li>
+  </ol>
+  <div class="self-name">EthAccount</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../index.html">etherscan_api</a></li>
+      <li><a href="../etherscan_api/etherscan_api-library.html">etherscan_api</a></li>
+      <li class="self-crumb">EthAccount extension</li>
+    </ol>
+    
+    <h5>etherscan_api library</h5>
+    <ol>
+  <li class="section-title"><a href="../etherscan_api/etherscan_api-library.html#classes">Classes</a></li>
+  <li><a href="../etherscan_api/EtherscanAPI-class.html">EtherscanAPI</a></li>
+  <li><a href="../etherscan_api/EtherScanFailure-class.html">EtherScanFailure</a></li>
+
+  <li class="section-title"><a href="../etherscan_api/etherscan_api-library.html#extension">Extensions</a></li>
+  <li><a href="../etherscan_api/DescribeEnum.html">DescribeEnum</a></li>
+  <li><a href="../etherscan_api/EthAccount.html">EthAccount</a></li>
+  <li><a href="../etherscan_api/EthBlock.html">EthBlock</a></li>
+  <li><a href="../etherscan_api/EthChainString.html">EthChainString</a></li>
+  <li><a href="../etherscan_api/EthContract.html">EthContract</a></li>
+  <li><a href="../etherscan_api/EthLog.html">EthLog</a></li>
+  <li><a href="../etherscan_api/EthProxy.html">EthProxy</a></li>
+  <li><a href="../etherscan_api/EthStats.html">EthStats</a></li>
+  <li><a href="../etherscan_api/EthTransaction.html">EthTransaction</a></li>
+
+
+
+
+  <li class="section-title"><a href="../etherscan_api/etherscan_api-library.html#functions">Functions</a></li>
+  <li><a href="../etherscan_api/describeEnum.html">describeEnum</a></li>
+
+  <li class="section-title"><a href="../etherscan_api/etherscan_api-library.html#enums">Enums</a></li>
+  <li><a href="../etherscan_api/EthChain-class.html">EthChain</a></li>
+  <li><a href="../etherscan_api/EtherSort-class.html">EtherSort</a></li>
+
+
+</ol>
+
+</div>
+
+<div id="dartdoc-main-content" class="main-content">
+    <div><h1><span class="kind-class">EthAccount</span> extension     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ </h1></div>
+
+        <section>
+        <dl class="dl-horizontal">
+        <dt>on</dt>
+        <dd>
+            <ul class="comma-separated clazz-relationships">
+            <li><a href="../etherscan_api/EtherscanAPI-class.html">EtherscanAPI</a></li>
+            </ul>
+        </dd>
+        </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="instance-methods">
+        <h2>Methods</h2>
+        <dl class="callables">
+            <dt id="balance" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/balance.html">balance</a></span><span class="signature">(<wbr><span class="parameter" id="balance-param-addresses">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">addresses</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanBalanceModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Returns the balance of a sepcific account <a href="../etherscan_api/EthAccount/balance.html">[...]</a>
+                          
+</dd>
+            <dt id="getMinedBlocks" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/getMinedBlocks.html">getMinedBlocks</a></span><span class="signature">(<wbr><span class="parameter" id="getMinedBlocks-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a></span> <span class="parameter-name">address</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanMintedBlocksModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Get a list of blocks that a specific account has mineds <a href="../etherscan_api/EthAccount/getMinedBlocks.html">[...]</a>
+                          
+</dd>
+            <dt id="tokenBalance" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/tokenBalance.html">tokenBalance</a></span><span class="signature">(<wbr><span class="parameter" id="tokenBalance-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span><span class="parameter" id="tokenBalance-param-contractAddress"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">contractAddress</span>, </span><span class="parameter" id="tokenBalance-param-tokenName"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">tokenName</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanTokenBalanceModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Returns the amount of Tokens a specific account owns. <a href="../etherscan_api/EthAccount/tokenBalance.html">[...]</a>
+                          
+</dd>
+            <dt id="tokennFttx" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/tokennFttx.html">tokennFttx</a></span><span class="signature">(<wbr><span class="parameter" id="tokennFttx-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span><span class="parameter" id="tokennFttx-param-contractAddress"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">contractAddress</span>, </span><span class="parameter" id="tokennFttx-param-startblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">startblock</span> = <span class="default-value">0</span>, </span><span class="parameter" id="tokennFttx-param-endblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a></span> <span class="parameter-name">endblock</span> = <span class="default-value">&#39;latest&#39;</span>, </span><span class="parameter" id="tokennFttx-param-page"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">page</span> = <span class="default-value">1</span>, </span><span class="parameter" id="tokennFttx-param-offset"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">100</span>, </span><span class="parameter" id="tokennFttx-param-sort"><span class="type-annotation"><a href="../etherscan_api/EtherSort-class.html">EtherSort</a></span> <span class="parameter-name">sort</span> = <span class="default-value">EtherSort.asc</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherscanTokenFftxModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Get a list of "ERC721 - Token Transfer Events" by Address <a href="../etherscan_api/EthAccount/tokennFttx.html">[...]</a>
+                          
+</dd>
+            <dt id="tokenTx" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/tokenTx.html">tokenTx</a></span><span class="signature">(<wbr><span class="parameter" id="tokenTx-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span><span class="parameter" id="tokenTx-param-contractAddress"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">contractAddress</span>, </span><span class="parameter" id="tokenTx-param-startblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">startblock</span> = <span class="default-value">0</span>, </span><span class="parameter" id="tokenTx-param-endblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a></span> <span class="parameter-name">endblock</span> = <span class="default-value">&#39;latest&#39;</span>, </span><span class="parameter" id="tokenTx-param-page"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">page</span> = <span class="default-value">1</span>, </span><span class="parameter" id="tokenTx-param-offset"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">100</span>, </span><span class="parameter" id="tokenTx-param-sort"><span class="type-annotation"><a href="../etherscan_api/EtherSort-class.html">EtherSort</a></span> <span class="parameter-name">sort</span> = <span class="default-value">EtherSort.asc</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanMintedTokenTxModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Get a list of "ERC20 - Token Transfer Events" by Address <a href="../etherscan_api/EthAccount/tokenTx.html">[...]</a>
+                          
+</dd>
+            <dt id="txList" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/txList.html">txList</a></span><span class="signature">(<wbr><span class="parameter" id="txList-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span><span class="parameter" id="txList-param-startblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">startblock</span> = <span class="default-value">0</span>, </span><span class="parameter" id="txList-param-endblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">endblock</span>, </span><span class="parameter" id="txList-param-page"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">page</span> = <span class="default-value">1</span>, </span><span class="parameter" id="txList-param-offset"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">100</span>, </span><span class="parameter" id="txList-param-sort"><span class="type-annotation"><a href="../etherscan_api/EtherSort-class.html">EtherSort</a></span> <span class="parameter-name">sort</span> = <span class="default-value">EtherSort.asc</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanTxListModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Get a list of transactions for a specfic address <a href="../etherscan_api/EthAccount/txList.html">[...]</a>
+                          
+</dd>
+            <dt id="txListInternal" class="callable">
+              <span class="name"><a href="../etherscan_api/EthAccount/txListInternal.html">txListInternal</a></span><span class="signature">(<wbr><span class="parameter" id="txListInternal-param-txhash">{<span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">txhash</span>, </span><span class="parameter" id="txListInternal-param-address"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span><span class="parameter" id="txListInternal-param-startblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">startblock</span> = <span class="default-value">0</span>, </span><span class="parameter" id="txListInternal-param-endblock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">endblock</span> = <span class="default-value">&#39;latest&#39;</span>, </span><span class="parameter" id="txListInternal-param-sort"><span class="type-annotation"><a href="../etherscan_api/EtherSort-class.html">EtherSort</a></span> <span class="parameter-name">sort</span> = <span class="default-value">EtherSort.asc</span>}</span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanTxInternalModel</span>&gt;</span></span>
+              </span>
+                          </dt>
+            <dd>
+              Get a list of internal transactions <a href="../etherscan_api/EthAccount/txListInternal.html">[...]</a>
+                          
+</dd>
+        </dl>
+    </section>
+
+
+
+
+
+</div> <!-- /.main-content -->
+
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../etherscan_api/EthAccount.html#instance-methods">Methods</a></li>
+    <li><a href="../etherscan_api/EthAccount/balance.html">balance</a></li>
+    <li><a href="../etherscan_api/EthAccount/getMinedBlocks.html">getMinedBlocks</a></li>
+    <li><a href="../etherscan_api/EthAccount/tokenBalance.html">tokenBalance</a></li>
+    <li><a href="../etherscan_api/EthAccount/tokennFttx.html">tokennFttx</a></li>
+    <li><a href="../etherscan_api/EthAccount/tokenTx.html">tokenTx</a></li>
+    <li><a href="../etherscan_api/EthAccount/txList.html">txList</a></li>
+    <li><a href="../etherscan_api/EthAccount/txListInternal.html">txListInternal</a></li>
+
+
+
+
+</ol>
+
+</div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    etherscan_api
+      1.0.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../static-assets/typeahead.bundle.min.js"></script>
+<script src="../static-assets/highlight.pack.js"></script>
+<script src="../static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -210,7 +210,7 @@ extension EthAccount on EtherscanAPI {
   /// Get a list of blocks that a specific account has mineds
   ///
   /// Example
-  /// 
+  ///
   /// ```dart
   /// var txlist = eth.getMinedBlocks(
   ///   address:'0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b'
@@ -255,7 +255,7 @@ extension EthAccount on EtherscanAPI {
   /// `contractAddress` - Address of ERC20 token contract (if not specified lists transfers for all tokens)
   ///
   /// Example
-  /// 
+  ///
   /// ```dart
   /// var txlist = eth.tokenTx(
   ///   address: '0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae',
@@ -317,7 +317,7 @@ extension EthAccount on EtherscanAPI {
   /// `contractAddress` - Address of ERC20 token contract (if not specified lists transfers for all tokens)
   ///
   /// Example
-  /// 
+  ///
   /// ```dart
   /// var txlist = eth.tokenTx(
   ///   address: '0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae',

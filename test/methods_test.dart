@@ -14,6 +14,7 @@ void main() {
         var txlist = api.getMinedBlocks(
           address: '0x9dd134d14d1e65f84b706d6f205cd5b1cd03a46b',
         );
+
         await txlist.then((res) {
           expect(res, isNot(EtherScanMintedBlocksModel.empty()));
         });
@@ -23,6 +24,7 @@ void main() {
         var supply = api.tokenBalance(
             address: '0xe04f27eb70e025b78871a2ad7eabe85e61212761',
             contractAddress: '0x57d90b64a1a57749b0f932f1a3395792e12e7055');
+
         await supply.then((res) {
           expect(res, isNot(EtherScanTokenBalanceModel.empty()));
         });
@@ -31,6 +33,7 @@ void main() {
       test('.txList()', () async {
         var txlist =
             api.txList(address: '0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae');
+
         await txlist.then((res) {
           expect(res, isNot(EtherScanTxListModel.empty()));
         });
@@ -40,6 +43,7 @@ void main() {
         var txlist = api.txListInternal(
             txhash:
                 '0x8902e33b4da704b55d25e72af717b73a7f768b9b801422b6f0753429edaf2aae');
+
         await txlist.then((res) {
           expect(res, isNot(EtherScanTxInternalModel.empty()));
         });
@@ -128,11 +132,13 @@ void main() {
         var status = api.getStatus(
             txhash:
                 '0x15f8e5ea1079d9a0bb04a4c58ae5fe7654b5b2b4463375ff7ffb490aa0032f3a');
+
         status.then((res) {
           expect(res, isNot(EtherScanTxStatusModel.empty()));
         });
       });
     });
+
     // test for bug #31
     // see https://github.com/sebs/etherscan-api/issues/31
 
@@ -140,12 +146,14 @@ void main() {
       test('getabi for a contract that is not verified by etherscan: error',
           () async {
         var api = EtherscanAPI(
-            apiKey: 'YourApiKey',
-            chain: EthChain.ropsten,
-            timeout: Duration(milliseconds: 10000));
-        //
+          apiKey: 'YourApiKey',
+          chain: EthChain.ropsten,
+          timeout: Duration(milliseconds: 10000),
+        );
+
         var abi =
             api.getAbi(address: '0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413');
+
         await abi.then((v) {
           expect(v, EtherScanAbiModel.empty());
         });
@@ -153,65 +161,73 @@ void main() {
     });
 
     group('proxy', () {
-      test('.blockNumber()', () {
+      test('.blockNumber()', () async {
         var res = api.blockNumber();
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.getBlockByNumber()', () {
+      test('.getBlockByNumber()', () async {
         var res = api.getBlockByNumber(tag: '0x10d4f');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanBlockByNumberModel.empty()));
         });
       });
 
-      test('.getUncleByBlockNumberAndIndex()', () {
+      test('.getUncleByBlockNumberAndIndex()', () async {
         var res =
             api.getUncleByBlockNumberAndIndex(tag: '0x210A9B', index: '0x0');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanBlockByNumberModel.empty()));
         });
       });
 
-      test('.getBlockTransactionCountByNumber()', () {
+      test('.getBlockTransactionCountByNumber()', () async {
         var res = api.getBlockTransactionCountByNumber(tag: '0x10FB78');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.getTransactionByHash()', () {
+      test('.getTransactionByHash()', () async {
         var res = api.getTransactionByHash(
             txhash:
                 '0x1e2910a262b1008d0616a0beb24c1a491d78771baa54a33e66065e03b1f46bc1');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanTxByHashModel.empty()));
         });
       });
 
-      test('.getTransactionByBlockNumberAndIndex()', () {
+      test('.getTransactionByBlockNumberAndIndex()', () async {
         var res = api.getTransactionByBlockNumberAndIndex(
           tag: '0x10d4f',
           index: '0x0',
         );
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanTxByHashModel.empty()));
         });
       });
 
-      test('.getTransactionCount()', () {
+      test('.getTransactionCount()', () async {
         var res = api.getTransactionCount(
             address: '0x2910543af39aba0cd09dbb2d50200b3e800a63d2');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.sendRawTransaction()', () {
+      test('.sendRawTransaction()', () async {
         var res = api.sendRawTransaction(hex: '0xf904808000831cfde080');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNotNull);
         });
       });
@@ -225,49 +241,54 @@ void main() {
         });
       });
 
-      test('.call()', () {
+      test('.call()', () async {
         var res = api.call(
           to: '0xAEEF46DB4855E25702F8237E8f403FddcaF931C0',
           data:
               '0x70a08231000000000000000000000000e16359506c028e51f16be38986ec5746251e9724',
         );
-        res.then((res) {
+        
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.getCode()', () {
+      test('.getCode()', () async {
         var res = api.getCode(
             address: '0xf75e354c5edc8efed9b59ee9f67a80845ade7d0c',
             tag: 'latest');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.getStorageAt()', () {
+      test('.getStorageAt()', () async {
         var res = api.getStorageAt(
             address: '0x6e03d9cce9d60f3e9f2597e13cd4c54c55330cfd',
             position: '0x0',
             tag: 'latest');
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('proxy.gasPrice', () {
+      test('.gasPrice()', () async {
         var res = api.gasPrice();
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });
 
-      test('.estimateGas()', () {
+      test('.estimateGas()', () async {
         var res = api.estimateGas(
           from: '0xdf4221b931b6ad4f4f221e2eb03913bd4368d0ba',
           to: '0x109aa384b8786e55abfa1f0ac6cb0561e0a06e94',
         );
-        res.then((res) {
+
+        await res.then((res) {
           expect(res, isNot(EtherScanRpcResponseModel.empty()));
         });
       });

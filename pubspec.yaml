@@ -1,6 +1,6 @@
 name: etherscan_api
 description: A dart library to access the etherscan.io apis. 
-version: 1.0.0
+version: 1.0.0-beta
 homepage: https://www.example.com
 
 environment:

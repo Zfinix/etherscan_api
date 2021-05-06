@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getLogs method from the EthLog extension, for the Dart programming language.">
+  <title>getLogs method - EthLog extension - etherscan_api library - Dart API</title>
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">etherscan_api</a></li>
+    <li><a href="../../etherscan_api/etherscan_api-library.html">etherscan_api</a></li>
+    <li><a href="../../etherscan_api/EthLog.html">EthLog</a></li>
+    <li class="self-crumb">getLogs method</li>
+  </ol>
+  <div class="self-name">getLogs</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">etherscan_api</a></li>
+      <li><a href="../../etherscan_api/etherscan_api-library.html">etherscan_api</a></li>
+      <li><a href="../../etherscan_api/EthLog.html">EthLog</a></li>
+      <li class="self-crumb">getLogs method</li>
+    </ol>
+    
+    <h5>EthLog extension</h5>
+    <ol>
+
+
+
+
+
+    <li class="section-title"><a href="../../etherscan_api/EthLog.html#instance-methods">Methods</a></li>
+    <li><a href="../../etherscan_api/EthLog/getLogs.html">getLogs</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div><h1><span class="kind-method">getLogs</span> method     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="https://api.dart.dev/stable/2.12.4/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">EtherScanLogModel</span>&gt;</span></span>
+            <span class="name ">getLogs</span>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="getLogs-param-address">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">address</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-fromBlock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">fromBlock</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-toBlock"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">toBlock</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic0"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic0</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic0_1_opr"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic0_1_opr</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic1"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic1</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic1_2_opr"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic1_2_opr</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic2"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic2</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic2_3_opr"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic2_3_opr</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic3"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic3</span>, </span></li>
+<li><span class="parameter" id="getLogs-param-topic0_2_opr"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.12.4/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">topic0_2_opr</span>}</span></li>
+</ol>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>The Event Log API was designed to provide an alternative to the native eth_getLogs.
+returns the status of a specific transaction hash</p>
+<p><code>fromBlock</code> - fromBlock</p>
+<p><code>toBlock</code> - toBlock</p>
+<p><code>topic0</code> - topic (32 Bytes per topic)</p>
+<p><code>topic0_1_opr</code> - and | or between topic0 &amp; topic1</p>
+<p><code>topic1</code> - topic (32 Bytes per topic)</p>
+<p><code>topic1_2_opr</code> - and | or between topic1 &amp; topic2</p>
+<p><code>topic2</code> - topic (32 Bytes per topic)</p>
+<p><code>topic2_3_opr</code> - and | or between topic2 &amp; topic3</p>
+<p><code>topic3</code> - topic (32 Bytes per topic)</p>
+<p><code>topic0_2_opr</code> - and | or between topic0 &amp; topic2</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">Future&lt;EtherScanLogModel&gt; getLogs({
+  required String? address,
+  String? fromBlock,
+  String? toBlock,
+  String? topic0,
+  String? topic0_1_opr,
+  String? topic1,
+  String? topic1_2_opr,
+  String? topic2,
+  String? topic2_3_opr,
+  String? topic3,
+  String? topic0_2_opr,
+}) async {
+  const module = &#39;logs&#39;;
+  const action = &#39;getLogs&#39;;
+
+  Map&lt;String, dynamic&gt;? query = {
+    &#39;apiKey&#39;: apiKey,
+    &#39;module&#39;: module,
+    &#39;action&#39;: action,
+  };
+
+  if (address != null) {
+    query.putIfAbsent(&#39;address&#39;, () =&gt; address);
+  }
+
+  if (fromBlock != null) {
+    query.putIfAbsent(&#39;fromBlock&#39;, () =&gt; fromBlock);
+  }
+
+  if (toBlock != null) {
+    query.putIfAbsent(&#39;toBlock&#39;, () =&gt; toBlock);
+  }
+
+  if (topic0 != null) {
+    query.putIfAbsent(&#39;topic0&#39;, () =&gt; topic0);
+  }
+  if (topic0_1_opr != null) {
+    query.putIfAbsent(&#39;topic0_1_opr&#39;, () =&gt; topic0_1_opr);
+  }
+
+  if (topic1 != null) {
+    query.putIfAbsent(&#39;topic1&#39;, () =&gt; topic1);
+  }
+
+  if (topic1_2_opr != null) {
+    query.putIfAbsent(&#39;topic1_2_opr&#39;, () =&gt; topic1_2_opr);
+  }
+  if (topic2 != null) {
+    query.putIfAbsent(&#39;topic2&#39;, () =&gt; topic2);
+  }
+
+  if (topic2_3_opr != null) {
+    query.putIfAbsent(&#39;topic2_3_opr&#39;, () =&gt; topic2_3_opr);
+  }
+
+  if (topic0_2_opr != null) {
+    query.putIfAbsent(&#39;topic0_2_opr&#39;, () =&gt; topic0_2_opr);
+  }
+
+  if (topic3 != null) {
+    query.putIfAbsent(&#39;topic3&#39;, () =&gt; topic3);
+  }
+  return (await get(query)).fold(
+    (l) =&gt; EtherScanLogModel.empty(),
+    (r) =&gt; EtherScanLogModel.fromJson(r),
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    etherscan_api
+      1.0.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>
