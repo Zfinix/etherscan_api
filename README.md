@@ -1,6 +1,6 @@
 # Etherscan Dart API
 
-[![license](https://img.shields.io/github/license/Zfinix/etherscan_api.svg)](https://github.com/Zfinix/etherscan_api/blob/master/LICENSE.md)
+[![license](https://img.shields.io/github/license/Zfinix/etherscan_api.svg)](https://github.com/Zfinix/etherscan_api/blob/main/LICENSE.md)
 [![GitHub tag](https://img.shields.io/github/tag/Zfinix/etherscan_api.svg)](https://github.com/Zfinix/etherscan_api)
 
 [![GitHub issues](https://img.shields.io/github/issues/Zfinix/etherscan_api.svg)](https://github.com/Zfinix/etherscan_api/issues)
