@@ -5,7 +5,6 @@ import 'package:dio/dio.dart';
 import 'package:etherscan_api/etherscan_api.dart';
 import 'package:etherscan_api/src/core/utils/logger.dart';
 
-import '../commons/failure.dart';
 
 const ETH_API_URLS = {
   'mainnet': 'https://api.etherscan.io',
@@ -32,7 +31,7 @@ extension GetRequest on EtherscanAPI {
       final client = Dio(
         BaseOptions(
           baseUrl: chain.chainApiUrl,
-          connectTimeout: timeout?.inMilliseconds,
+          connectTimeout: timeout,
           responseType: ResponseType.json,
         ),
       );

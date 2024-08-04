@@ -5,3 +5,6 @@
 # Conventional directory for build outputs
 build/
 
+# InteliJ
+.idea/
+*.iml
